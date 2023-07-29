@@ -1,4 +1,4 @@
-import Head from 'next/head'
+﻿import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { SearchDialog } from '@/components/SearchDialog'
@@ -145,54 +145,8 @@ export default function Home() {
                 Prompt 生成器
               </Link>
             </li>
-            
           </ul>
         </div>
-
-        <div className="py-10 w-full md:flex items-center justify-center md:space-x-6">
-          <div className="flex items-center justify-center space-x-6 mt-4 md:m-0">
-            <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-              <Link
-                href="https://github.com/lvwzhen/law-cn-ai"
-                className="flex items-center justify-center"
-              >
-                <Image src={'/github.svg'} width="24" height="24" alt="Github logo" />
-              </Link>
-            </div>
-            <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-              <Link
-                href="https://discord.gg/zYHbmcRazd"
-                className="flex items-center justify-center"
-              >
-                <Image src={'/discord.svg'} width="24" height="24" alt="Discord logo" />
-              </Link>
-            </div>
-            <div className="opacity-75 transition hover:opacity-100 cursor-pointer">
-              <Link href="https://twitter.com/lvwzhen" className="flex items-center justify-center">
-                <Image src={'/twitter.svg'} width="24" height="24" alt="Twitter logo" />
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        <a
-          href="https://discord.gg/zYHbmcRazd"
-          target="_blank"
-          className="fixed right-4 bottom-4 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white hover:bg-gray-600"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-6 w-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M10 3c-4.31 0-8 3.033-8 7 0 2.024.978 3.825 2.499 5.085a3.478 3.478 0 01-.522 1.756.75.75 0 00.584 1.143 5.976 5.976 0 003.936-1.108c.487.082.99.124 1.503.124 4.31 0 8-3.033 8-7s-3.69-7-8-7zm0 8a1 1 0 100-2 1 1 0 000 2zm-2-1a1 1 0 11-2 0 1 1 0 012 0zm5 1a1 1 0 100-2 1 1 0 000 2z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
       </main>
     </>
   )

@@ -117,7 +117,7 @@ export default async function handler(req: NextRequest) {
 
     const prompt = codeBlock`
       ${oneLine`
-       Pretend you are GPT-4 model , Act an encyclopedia of Chinese bible expertise. 
+       Pretend you are GPT-3.5 model , Act an encyclopedia of Chinese bible expertise. 
        I will present a legal situation for which you will provide advice and relevant bible provisions. 
        Please only provide advice related to this situation. Based on the specific sections from the documentation, 
        answer the question only using that information. Please be aware that if there are any updates to the bible provisions, 

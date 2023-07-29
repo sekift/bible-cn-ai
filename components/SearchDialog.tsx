@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
@@ -187,7 +187,7 @@ export function SearchDialog() {
       >
         <Search width={15} />
         <span className="border border-l h-5"></span>
-        <span className="inline-block ml-4">请输入法律问题</span>
+        <span className="inline-block ml-4">请输入圣经问题</span>
         <kbd
           className="absolute right-3 top-4
           pointer-events-none inline-flex h-5 select-none items-center gap-1
@@ -202,9 +202,9 @@ export function SearchDialog() {
       <Dialog open={open}>
         <DialogContent className="sm:max-w-[850px] text-black">
           <DialogHeader>
-            <DialogTitle>AI 法律助手</DialogTitle>
+            <DialogTitle>AI 圣经助手</DialogTitle>
             <DialogDescription>
-              我是您的法律助手，请输入您想查询的问题
+              我是您的圣经助手，请输入您想查询的问题
             </DialogDescription>
             <hr />
             <button className="absolute top-0 right-2 p-2" onClick={() => setOpen(false)}>
@@ -254,7 +254,7 @@ export function SearchDialog() {
 
               <div className="relative">
                 <Input
-                  placeholder="输入法律问题..."
+                  placeholder="输入圣经问题..."
                   name="search"
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
@@ -276,10 +276,10 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('离婚需要双方同意吗？')
+                    setSearch('神是什么？')
                   }
                 >
-                  离婚需要双方同意吗？
+                  神是什么？
                 </button>
                 <button
                   type="button"
@@ -289,10 +289,10 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('民间借贷受国家保护的合法利息是多少？')
+                    setSearch('摩西是谁？')
                   }
                 >
-                  民间借贷受国家保护的合法利息是多少？
+                  摩西是谁？
                 </button>
                 <button
                   type="button"
@@ -302,16 +302,16 @@ export function SearchDialog() {
                   rounded border border-slate-200 dark:border-slate-600
                   transition-colors"
                   onClick={(_) =>
-                    setSearch('欠了信用卡的钱还不上要坐牢吗？')
+                    setSearch('基督是谁？')
                   }
                 >
-                  欠了信用卡的钱还不上要坐牢吗？
+                  基督是谁？
                 </button>
               </div>
             </div>
             <DialogFooter>
               <div className="text-xs text-gray-500 mt-4 md:m-0 dark:text-gray-100">
-                * 回答由 AI 检索法律文件后生成，不保证准确率，仅供参考学习！<a href="https://afdian.net/a/lvwzhen/plan" className='ml-1 underline decoration-wavy decoration-indigo-500 underline-offset-2 hover:text-indigo-500' target='_blank'>打赏赞助</a>
+                * 回答由 AI 检索圣经文件后生成，不保证准确率，仅供参考学习！
               </div>
               <Button type="submit" className="bg-red-500 block w-full md:w-auto md:inline-block">
                 Ask
